@@ -20,3 +20,7 @@ void* freelist_pop(FreeList* list) {
     list->head = node->next;
     return (void*)node;
 }
+
+void freelist_reset(FreeList* list) {
+    list->head = NULL;
+}

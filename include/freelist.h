@@ -12,5 +12,6 @@ typedef struct FreeList {
 FreeList freelist_init(void);
 void freelist_push(FreeList* list, void* chunk);
 void* freelist_pop(FreeList* list);
+void freelist_reset(FreeList* list);
 
 #endif // FREELIST_H
